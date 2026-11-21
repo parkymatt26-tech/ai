@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "singlecheat",
+  "version": "${version}",
+  "name": "SingleCheat Client",
+  "description": "Single-player only cheat client for Minecraft. All modules auto-disable on multiplayer servers.",
+  "authors": [
+    "SingleCheat"
+  ],
+  "license": "MIT",
+  "icon": "assets/singlecheat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.singlecheat.client.CheatClient"
+    ]
+  },
+  "mixins": [
+    "singlecheat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21"
+  }
+}

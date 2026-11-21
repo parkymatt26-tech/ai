@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.singlecheat.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AbstractBlockMixin",
+    "BlockMixin",
+    "BlockStateMixin",
+    "ClientPlayerEntityMixin",
+    "GameRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
